@@ -56,6 +56,7 @@ def plot_GP_and_AF(X,y,Xtest,mu,s,af_prob,f,noise_var,xmin,xmax,ymin,ymax,it,sav
     #axs[1].set_ylim([0,1])
     if it == 1:
         axs[1].set(ylabel=f"{method}")
+    #axs[1].set(ylabel=f"{method}")
     axs[1].axvline(Xtest[idx], linestyle='dashdot', linewidth=1, c=c.nordblue)    
     axs[1].plot(Xtest[idx], af_prob[idx], marker='p', c=c.nordred, linestyle='None', ms=8)
     
